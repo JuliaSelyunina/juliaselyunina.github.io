@@ -42,6 +42,7 @@ footer {
 }
 .container-header, .forms-block, .container-content, .advantages, .container-kinds, .container-shares, .container-footer {
 	max-width: 1100px;
+	min-width: 300px;
 	margin: auto; 
 	background: #fff; 
 	border-radius: 3px;
@@ -49,7 +50,13 @@ footer {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
 	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
 	flex-wrap: wrap;
     justify-content: space-between;
     box-sizing: border-box;
@@ -149,12 +156,23 @@ p.address span.email{
 	margin-bottom: 15px;
 }
 .about-company {
+	-webkit-box-flex: 1;   
+    width: 25%;            
+    -webkit-flex: 1;       
+    -ms-flex: 1;
 	flex: 1;
 	margin-right: 15px;
 }
 .projects {
+	-webkit-box-flex: 3;   
+    width: 75%;            
+    -webkit-flex: 3;       
+    -ms-flex: 3;
 	flex: 3;
 	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	flex-flow: row wrap;
 }
 .about-company p{
@@ -256,6 +274,9 @@ span.project-description {
 .projects-row{
 	width:100%;
 	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	flex-flow: row wrap;
 }
 .project{
@@ -270,15 +291,30 @@ span.project-description {
 	color: black;
 	font-weight: bold;
 	text-align: center;
+	-webkit-box-flex: 1;   
+    width: 100%;            
+    -webkit-flex: 1;       
+    -ms-flex: 1;
 	flex:1;
 }
 .advantages {
 	flex: 1;
+	-webkit-box-flex: 1;   
+    width: 100%;            
+    -webkit-flex: 1;       
+    -ms-flex: 1;
 	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	flex-flow: row wrap;
 }
 .advantage-item {
 	flex:1;
+	-webkit-box-flex: 1;   
+    width: 25%;            
+    -webkit-flex: 1;       
+    -ms-flex: 1;
 }
 h3[class="advantage"] {
  	font-family: 'Exo 2.0 Black', arial;
@@ -299,6 +335,10 @@ p[class="advantage"] {
 }
 .kinds {
 	flex:1;
+	-webkit-box-flex: 1;   
+    width: 25%;            
+    -webkit-flex: 1;       
+    -ms-flex: 1;
 	margin: 10px;
 }
 .kind-subtitle > .price{
@@ -311,6 +351,10 @@ ul[class="kind-description"] {
 }
 .share {
 	flex:1;
+	-webkit-box-flex: 1;   
+    width: 50%;            
+    -webkit-flex: 1;       
+    -ms-flex: 1;
 	margin: 10px;
 }
 .share button{
@@ -367,8 +411,10 @@ a.footer_back_to_top {
 	margin-top: -30px;
 	
 }
-
-
 .footer_back_to_top {
 	text-align: center;
+}
+.map {
+
+
 }
