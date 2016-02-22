@@ -1,0 +1,144 @@
+body{
+	background: #fefefe; 
+	margin: 0; 
+	padding: 0;
+	font:1em/1.3em Arial, Tahoma, "Trebuchet MS", sans-serif;
+	color: #272727;
+}
+header {
+	width: 100%;
+	height: auto;
+	background: url(../src/background_part1.png) no-repeat;
+    background-size: 100% 100%;
+}
+.container-forms {
+    width: 100%;
+	height: auto;
+	background: url(../src/background_part2.png) no-repeat;
+    background-size: 100% 100%;
+}
+.container-content, .container-kinds, .container-shares {
+	width: 100%;
+	height: auto;
+	background-color: white;
+    background-size: 100% 100%;
+}
+.container-advantages {
+	width: 100%;
+	height: auto;
+	background: url(../src/background_part3.png) no-repeat;
+    background-size: 100% 100%;
+}
+.container-footer {
+	width: 100%;
+	height: auto;
+	background: url(../src/footer_background.png) no-repeat;
+    background-size: 100% 100%;
+}
+.container-header, .forms-block {
+	margin: 20px; 
+	border: 1px solid #ccc; 
+	padding: 20px; 
+	background: #fff; 
+	border-radius: 3px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255, 0.0);
+}
+.header {
+	font-family: 'Exo 2.0 Medium', arial;
+    font-size: 16px;
+    font-weight: bold;
+}
+.address{
+	text-align: right;
+ 	color: #818181;
+ 	font-family: 'Exo 2.0 Light', arial;
+    font-size: 12px;
+}
+p[class="address"] span[class="number"]{
+ 	font-family: 'Exo 2.0 Medium', arial;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+p[class="address"] span[class="email"]{
+    color: #ed6c14;
+}
+.main-menu{
+ 	clear:left;
+ 	list-style-type: none;
+ 	padding: 20px;
+ 	text-align: center;
+}
+.main-menu > li{
+ 	display:inline; 
+ 	margin-right:15px;
+}
+.main-menu a:hover{
+    color: orange;
+    text-decoration: none;
+    font-family: 'Exo 2.0 Semi Bold', arial;
+}
+.main-menu a{
+ 	color: black;
+    text-decoration: none;
+    font-family: 'Exo 2.0 Regular', arial;
+    font-weight: 500;
+}
+.forms-block{
+	height: auto;
+	flex-flow: row wrap;
+}
+.forms > h1{
+	font-family: 'Exo 2.0 Semi Bold', arial;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+.forms,  img{
+	display: block;
+ 	float: left;
+ 	margin-right:45px;
+ 	font-family: 'Exo 2.0 Medium', arial;
+    font-size: 14px;
+}
+.form-call, .form-consultation{
+	display: inline-block;
+	margin-right: 25px;
+}
+.form-call input, .form-consultation input{
+	width: 250px;
+	margin-bottom: 10px;
+	padding: 7px;
+	border: 1px solid #CBCBCB;
+}
+.form-call input:focus, .form-consultation input:focus {
+	border: 1px solid #EC6A11;
+}
+.form-call input[type="submit"], .form-consultation input[type="submit"] {
+	background-color: #8E8E8E; 
+	color: white;
+	width: 200px;
+	border: 1px solid #8E8E8E;
+	margin-top: 5px;
+}
+.form-call input[type="submit"]:hover, .form-consultation input[type="submit"]:hover {
+	background-color: #EC6A11;
+	border: 1px solid #EC6A11;
+}
+.img-container img { 
+	height: auto; 
+	width: 100%; 
+	margin: 0; 
+	padding: 0; 
+	vertical-align: middle; 
+	border: none;
+
+}
