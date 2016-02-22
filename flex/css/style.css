@@ -58,7 +58,13 @@ footer {
 	-webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between; 
+    ms-flex-pack: space-between;
     justify-content: space-between;
+	text-align: justify; 
+	text-align-last: justify; 
+	justify-content: space-between;
     box-sizing: border-box;
     background-color: rgba(255,255,255, 0.0);
 }
@@ -104,6 +110,8 @@ p.address span.email{
 }
 .forms-block{
 	height: auto;
+	-webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
 	flex-flow: row wrap;
 }
 .forms > h1{
@@ -174,6 +182,8 @@ p.address span.email{
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
 }
 .about-company p{
     text-align: left;
@@ -278,6 +288,8 @@ span.project-description {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
 }
 .project{
 	position: relative;
@@ -298,23 +310,23 @@ span.project-description {
 	flex:1;
 }
 .advantages {
-	flex: 1;
-	-webkit-box-flex: 1;   
-    width: 100%;            
-    -webkit-flex: 1;       
-    -ms-flex: 1;
 	display: flex;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
-	flex-flow: row wrap;
-}
-.advantage-item {
-	flex:1;
-	-webkit-box-flex: 1;   
-    width: 25%;            
+	-webkit-box-flex: 1;              
     -webkit-flex: 1;       
     -ms-flex: 1;
+    flex: 1;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+}
+.advantage-item {
+	-webkit-box-flex: 1;              
+    -webkit-flex: 1;       
+    -ms-flex: 1;
+	flex:1;
 }
 h3[class="advantage"] {
  	font-family: 'Exo 2.0 Black', arial;
