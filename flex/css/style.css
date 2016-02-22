@@ -171,7 +171,7 @@ p.address span.email{
 	flex: 1;
 	margin-right: 15px;
 }
-.projects {
+.container-projects {
 	-webkit-box-flex: 3;   
     width: 75%;            
     -webkit-flex: 3;       
@@ -296,15 +296,14 @@ span.project-description {
 	flex: 1 1 calc(33.33% - 20px);
 	margin: 0 10px 0 10px;
 }
-.projects>a {	
+.container-projects>a {	
  	font-family: 'Exo 2.0 Semi Bold', arial;
 	font-size: 16px;
 	text-decoration: underline;
 	color: black;
 	font-weight: bold;
 	text-align: center;
-	-webkit-box-flex: 1;   
-    width: 100%;            
+	-webkit-box-flex: 1;              
     -webkit-flex: 1;       
     -ms-flex: 1;
 	flex:1;
