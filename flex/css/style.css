@@ -108,9 +108,9 @@ p.address span.email{
 }
 .forms-block{
 	height: auto;
-	-webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-	flex-flow: row wrap;
+	-webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
 }
 .forms > h1{
 	font-family: 'Exo 2.0 Semi Bold', arial;
@@ -151,7 +151,7 @@ p.address span.email{
 }
 .img-container img { 
 	height: auto; 
-	width: 100%; 
+	width: auto; 
 	margin: 0; 
 	padding: 10px 10px 10px 0px; 
 	vertical-align: middle; 
@@ -209,7 +209,9 @@ h2.subtitle {
 }
 .projects a img, .kinds img{
 	width: 100%;
+	max-width: 320px;
 	height: auto;
+
 }
 .project .sale_badge {
 	position: absolute;
