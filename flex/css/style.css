@@ -10,7 +10,7 @@ header {
 	padding-top: 15px;
 	width: 100%;
 	height: auto;
-	background: url(../src/background_part1.png) no-repeat;
+	background: url(../image/background_part1.png) no-repeat;
     background-size: 100% 100%;
 }
 a {
@@ -19,7 +19,7 @@ a {
 .container-forms {
     width: 100%;
 	height: auto;
-	background: url(../src/background_part2.png) no-repeat;
+	background: url(../image/background_part2.png) no-repeat;
     background-size: 100% 100%;
 }
 .container-content, .container-kinds, .container-shares {
@@ -31,13 +31,13 @@ a {
 .container-advantages {
 	width: 100%;
 	height: auto;
-	background: url(../src/background_part3.png) no-repeat;
+	background: url(../image/background_part3.png) no-repeat;
     background-size: 100% 100%;
 }
 footer {
 	width: 100%;
 	height: auto;
-	background: url(../src/footer_background.png) no-repeat;
+	background: url(../image/footer_background.png) no-repeat;
     background-size: 100% 100%;
 }
 .container-header, .forms-block, .container-content, .advantages, .container-kinds, .container-shares, .container-footer {
@@ -224,7 +224,6 @@ p.sale {
 	background-color: #E80000;
 	padding: 5px 10px 5px 10px;
 	margin-top: 15px;
-	align-self: flex-start;
 
 }
 p.project-subtitle, p.kind-subtitle {
@@ -244,6 +243,9 @@ span.project-description {
     padding-right: 12px; 
     right: 15px; 
     font-weight: bold;
+    position: absolute;
+	bottom:0;
+	right: 0;
 
 }
 
@@ -252,7 +254,7 @@ span.project-description {
 	width: 12px;
     height: 12px;
     float: left;
-    margin-left: -6px;
+    margin-left: -7px;
     margin-top: 6px;
     background: #ec6a11;
 /* Rotate */
@@ -276,9 +278,10 @@ span.project-description {
 	visibility: visible;
 }
 
-.projects input:hover, .projects button:hover {
+.projects button:hover {
 	background-color: black;
 	color: white;
+	border: 1px solid black;
 }
 
 .projects-row{
@@ -357,7 +360,7 @@ p[class="advantage"] {
 	font-size: 14px;
 	color: #C7C7C7;
 }
-ul[class="kind-description"] {
+ul.kind-description {
 	text-align: left;
 }
 .share {
@@ -402,7 +405,7 @@ ul[class="kind-description"] {
 	float: left;
 	text-align: left;
 	margin-bottom: 0;
-		padding-top: 5px;
+	padding-top: 5px;
 }
 .container-footer > p.address span.number{
 	color: white;
@@ -439,41 +442,96 @@ a.footer_back_to_top {
 	justify-content: center;
 	align-items: strech; 
 	align-content: strech; 
+	-webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
 	flex-flow: row wrap;
 }
 
 .home-kit {
-	text-align: center;
+	text-align:left;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
 	flex-flow: row wrap;
 	width: 100%
  }
 
 a.button {
-	background-color: #406cd0;
+	background-color: #8E8E8E;
 	color: #fff;
-	padding: 5px 10px;
-	border-radius: 2px;
-	text-decoration: none;
-	transition: 0.3s;
+	font-weight: bold;
+	padding: 8px 50px;
+	font-family: 'Exo 2.0 Light', arial;
+    font-size: 16px;
 
 }
 a.button:hover{
-	background-color: #c70000;
+	background-color: #EC6A11;
 }
-.home-kit h3 {
-	color: #406cd0;
+.home-kit h2 {
+	color: #EC6A11;
 	margin: 0 10px 0 0;
-	font-size: 1.1em;
-
+	font-size: 16px;
+	width: 100%;
+	font-family: 'Exo 2.0 Medium', arial;
+	padding: 0;
+	margin: 0;
 }
+.home-kit h3{
+	font-family: 'Exo 2.0 Light', arial;
+    font-size: 14px;
+    color: #717171;
+    padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
 .image {
-	flex: 2 1 200px;
+	flex: 1;
+}
+.description {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-box-flex: 2;              
+    -webkit-flex: 2;       
+    -ms-flex: 2;
+	flex: 2;
+	margin-left: 20px;
 }
 .complete-description {
-	flex: 2 1 200px;
+	-webkit-box-flex: 2;               
+    -webkit-flex: 2;       
+    -ms-flex: 2;
+	flex: 2;
+	font-family: 'Exo 2.0 Light', arial;
+    font-size: 14px;
+
+
 }
-.complete-list {
-	flex: 1 1 150px;
+.complete-list{
+	-webkit-box-flex: 1;               
+    -webkit-flex: 1;       
+    -ms-flex: 1;
+	flex:1;
+	font-family: 'Exo 2.0 Light', arial;
+    font-size: 14px;
+    color: black;
+}
+.complete-list p{
+	padding-left: 20px;
+	font-weight: bold;
+	margin-bottom: 0px;
 }
 .image img{width: 100%; height: auto;}
+ul {
+	list-style-image:url(../image/diamond.png);
+	margin-top: 5px;
+}
