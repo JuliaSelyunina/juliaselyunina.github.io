@@ -170,8 +170,7 @@ p.address span.email{
 	margin-right: 15px;
 }
 .container-projects {
-	-webkit-box-flex: 3;   
-    width: 75%;            
+	-webkit-box-flex: 3;             
     -webkit-flex: 3;       
     -ms-flex: 3;
 	flex: 3;
@@ -196,8 +195,8 @@ h2.subtitle {
 	margin-top: 20px;
 	color: black;
 	width:100%;
-	margin-bottom: 0px;
-	height: auto;
+	margin-bottom: 30px;
+	max-height: 30px;
 }
 .about-company > button, .projects button {
 	display: block;
@@ -216,7 +215,6 @@ h2.subtitle {
 .project .sale_badge {
 	position: absolute;
 	top:0;
-
 }
 p.sale {
 	position: absolute;
@@ -271,7 +269,9 @@ span.project-description {
     transform-origin: 0 100%;
 
 }
-
+ .project img {
+ 		border: 1px solid black;
+ }
 .project button:hover div {
 	visibility: visible;
 }
@@ -294,7 +294,7 @@ span.project-description {
 .project{
 	position: relative;
 	flex: 1 1 calc(33.33% - 20px);
-	margin: 0 10px 0 10px;
+	margin: 0 10px 10px 10px;
 }
 .container-projects>a {	
  	font-family: 'Exo 2.0 Semi Bold', arial;
@@ -425,7 +425,55 @@ a.footer_back_to_top {
 .footer_back_to_top {
 	text-align: center;
 }
-.map {
+.home-kit{
+	border:1px solid #ddd; 
+	background: #fefefe; 
+	border-radius: 3px;
+	margin-bottom: 25px;
+}
+.container-content {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	align-items: strech; 
+	align-content: strech; 
+	flex-flow: row wrap;
+}
 
+.home-kit {
+	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%
+ }
+
+a.button {
+	background-color: #406cd0;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 2px;
+	text-decoration: none;
+	transition: 0.3s;
 
 }
+a.button:hover{
+	background-color: #c70000;
+}
+.home-kit h3 {
+	color: #406cd0;
+	margin: 0 10px 0 0;
+	font-size: 1.1em;
+
+}
+.image {
+	flex: 2 1 200px;
+}
+.complete-description {
+	flex: 2 1 200px;
+}
+.complete-list {
+	flex: 1 1 150px;
+}
+.image img{width: 100%; height: auto;}
