@@ -309,10 +309,16 @@ hr {
   .container, .conteiner-footer {
     width: 480px;
   }
+  .img-container img {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   .container, .conteiner-footer {
     width: 750px;
+  }
+  .img-container img {
+    display: block;
   }
 }
 @media (min-width: 992px) {
