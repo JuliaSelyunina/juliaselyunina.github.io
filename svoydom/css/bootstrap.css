@@ -305,6 +305,11 @@ hr {
   padding-left: 15px;
   padding-right: 15px;
 }
+@media (min-width: 480px) {
+  .container, .conteiner-footer {
+    width: 480px;
+  }
+}
 @media (min-width: 768px) {
   .container, .conteiner-footer {
     width: 750px;
