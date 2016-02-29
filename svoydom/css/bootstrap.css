@@ -318,17 +318,23 @@ hr {
     width: 750px;
   }
   .img-container img {
-    display: block;
+    display: none;
   }
 }
 @media (min-width: 992px) {
   .container, .conteiner-footer {
     width: 970px;
   }
+    .img-container img {
+    display: none;
+  }
 }
 @media (min-width: 1200px) {
   .container, .conteiner-footer {
     width: 1170px;
+  }
+  .img-container img {
+    display: block;
   }
 }
 .container-fluid {

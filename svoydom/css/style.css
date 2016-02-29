@@ -7,6 +7,7 @@ body {
 *:focus {outline: none;}
 .container {
 	text-align: center;
+	min-width: 320px;
 }
 a:hover {
 	text-decoration: none;
@@ -71,7 +72,7 @@ h2.subtitle {
     font-family: 'Exo 2.0 Regular', arial;
 }
 .forms-block{
-	height: 350px;
+	height: auto;
 }
 .forms > h1{
 	font-family: 'Exo 2.0 Semi Bold', arial;
@@ -82,17 +83,13 @@ h2.subtitle {
 .forms,  img{
 	display: block;
  	float: left;
- 	margin-right:45px;
  	font-family: 'Exo 2.0 Medium', arial;
     font-size: 14px;
 }
-.form-call, .form-consultation{
-	display: inline-block;
-	margin-right: 25px;
-}
+
 .form-call input, .form-consultation input{
 	width: 250px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	padding: 7px;
 	border: 1px solid #CBCBCB;
 }
@@ -111,10 +108,15 @@ h2.subtitle {
 	border: 1px solid #EC6A11;
 }
 .img-container img { 
-	height: 350px; 
-	width: 450px; 
+	width: auto;
+	height: auto;
+	max-height: 350px; 
+	max-width: 450px; 
 	float: right;
 
+}
+.forms, .form-call, .form-consultation{
+	padding-left: 0;
 }
 .about-company p{
     text-align: left;
@@ -137,7 +139,7 @@ h2[class="subtitle"] {
 	font-family: 'Exo 2.0 Light', arial;
 	font-size: 14px;
 }
-.projects a img, .kinds img, .shares img, .image img{
+.projects a img, .kinds img, .shares img, .image img, .completed-work-image img{
 	width: 100%;
 	height: auto;
 }
@@ -350,4 +352,80 @@ a.button {
 }
 a.button:hover{
 	background-color: #EC6A11;
+}
+.description-materials {
+	margin: 0;
+	margin-bottom: 50px;
+	font-family: 'Exo 2.0 Light', arial;
+    font-size: 15px;
+    text-align: left;
+}
+.material {
+    margin-bottom: 50px;
+}
+.material h3 {
+	padding: 0;
+	margin: 0;
+	font-family: 'Exo 2.0 Semi Bold', arial;
+	font-size: 16px;
+}
+
+.material .description {
+	padding: 0;
+	margin: 0;
+	padding-right: 30px;
+	font-family: 'Exo 2.0 Light', arial;
+    font-size: 14px;
+    position: relative;
+    text-align: left;
+}
+
+.material .description a{
+	font-family: 'Exo 2.0 Regular', arial;
+	color: black;
+	font-weight: bold;
+	position: absolute;
+	right: 30px;
+	bottom: 0;
+}
+.material img
+{
+	width: auto;
+    height: auto;
+}
+.filter-buttons button {
+	background-color: #8E8E8E;
+	font-family: 'Exo 2.0 Light', arial;
+    font-size: 14px;
+    color: white;
+    padding: 5px 10px;
+
+}
+.completed-work-description {
+	text-align: left;
+	margin: 0;
+}
+
+.completed-work-description h3{
+    font-size: 16px;
+	font-family: 'Exo 2.0 Medium', arial;
+	color:black;
+	margin: 0;
+}
+.completed-work-description h4{
+    font-size: 14px;
+	font-family: 'Exo 2.0 Light', arial;
+	margin: 0;
+	color: #949494;
+}
+.filter-buttons {
+	margin-bottom: 30px;
+	text-align: center;
+	padding: 0;
+}
+.filter-button { margin: 0; padding: 0;} 
+.miniature {padding: 0;}
+.miniature img {
+	height: auto;
+	width: 100%;
 }
