@@ -8,6 +8,7 @@ body {
 .container {
 	text-align: center;
 	min-width: 320px;
+	margin-bottom: 50px;
 }
 a:hover {
 	text-decoration: none;
@@ -93,7 +94,8 @@ h2.subtitle {
 	padding: 7px;
 	border: 1px solid #CBCBCB;
 }
-.form-call input:focus, .form-consultation input:focus {
+.form-call input:focus, .form-consultation input:focus, .message:focus,
+.textbox:focus {
 	border: 1px solid #EC6A11;
 }
 .form-call input[type="submit"], .form-consultation input[type="submit"] {
@@ -139,7 +141,7 @@ h2[class="subtitle"] {
 	font-family: 'Exo 2.0 Light', arial;
 	font-size: 14px;
 }
-.projects a img, .kinds img, .shares img, .image img, .completed-work-image img{
+.projects a img, .kinds img, .shares img, .image img, .completed-work-image img, .reviews-img img, .review img{
 	width: 100%;
 	height: auto;
 }
@@ -259,33 +261,31 @@ ul[class="kind-description"] {
 }
 footer {
 	background-color: black;
-    position: relative;
-    height: 110px;
+    min-height: 110px;
+    height: auto;
     width: 100%;
-    margin-top: -40px;
-    margin-bottom: 0px;
 	clear:both;
+	bottom: 0;
 
 }
-.conteiner-footer > p[class="address"]{
+.container-footer{position: relative;}
+.container-footer p.address{
 	display: block;
-	float: left;
 	text-align: left;
-	margin-bottom: 0;
+	margin: 20px 0;
 }
-.conteiner-footer > p[class="address"] span[class="number"]{
+.container-footer p.address span[class="number"]{
 	color: white;
 }
-.conteiner-footer .logo {
-	margin-top: 20px;
+.container-footer .logo {
+	margin-top: 15px;
 	padding-right: -100px;
 }
-.conteiner-footer img.logo {
+.container-footer img.logo {
 	height: 100px;
 }
 .ogrn {
-	display: block;
-	float: right;
+	text-align: right;
 	margin-top: 30px;
 }
 a.footer_back_to_top {
@@ -341,17 +341,19 @@ a.footer_back_to_top {
 .complete-list ul {
 	margin-top: 5px;
 }
-a.button {
+a.button, label.button, input.button {
 	background-color: #8E8E8E;
 	color: #fff;
 	font-weight: bold;
-	padding: 8px 50px;
+	padding: 8px 40px;
 	font-family: 'Exo 2.0 Light', arial;
     font-size: 16px;
+    border-color: #8E8E8E;
 
 }
-a.button:hover{
+a.button:hover, label.button:hover, input.button:hover{
 	background-color: #EC6A11;
+	border-color: #EC6A11;
 }
 .description-materials {
 	margin: 0;
@@ -363,7 +365,7 @@ a.button:hover{
 .material {
     margin-bottom: 50px;
 }
-.material h3 {
+.material h3, .review-online h3 {
 	padding: 0;
 	margin: 0;
 	font-family: 'Exo 2.0 Semi Bold', arial;
@@ -401,6 +403,12 @@ a.button:hover{
     padding: 5px 10px;
 
 }
+.completed-work {
+	margin-bottom: 40px;
+}
+.completed-work-image {
+	height: 100%;
+}
 .completed-work-description {
 	text-align: left;
 	margin: 0;
@@ -421,11 +429,105 @@ a.button:hover{
 .filter-buttons {
 	margin-bottom: 30px;
 	text-align: center;
-	padding: 0;
+	padding-left: 0;
 }
 .filter-button { margin: 0; padding: 0;} 
-.miniature {padding: 0;}
-.miniature img {
-	height: auto;
-	width: 100%;
+
+.first-miniature {
+	padding: 0 10px 10px 0;
+}
+.second-miniature {
+	padding: 0 0 10px 10px;
+}
+.third-miniature {
+	padding: 10px 10px 0 0;
+}
+.fourth-miniature {
+	padding: 10px 0 0 10px;
+}
+.customer {
+	width: 70px;
+	height: 70px;
+    border-radius: 50%;
+}
+.review-online {
+	text-align: left;
+}
+.review-online h3, .review-online h4 {
+	margin: 0;
+} 
+.review-online h3 {
+	margin-top: 10px;
+}
+.review-online h4 {
+	font-family: 'Exo 2.0 Regular', arial;
+	font-size: 14px;
+	color: #868686;
+}
+.review-online .text-review {
+	font-size: 14px;
+	font-family: 'Exo 2.0 Light', arial;
+	color: #909090;
+}
+dl.star-rating ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100px;
+    height: 20px;
+    position: relative;
+    background: url(../images/stars.png);
+}
+dl.star-rating li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+dl.star-rating li a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-indent: -9999px;
+  position: absolute;
+  text-decoration: none;
+  z-index: 10;
+}
+dl.star-rating li a:hover {
+  background: url(../images/stars.png) left center;
+  left: 0;
+  z-index: 2;
+}
+dl.star-rating a.star1 {
+  left: 0;
+}
+  dl.star-rating a.star1:hover {
+  width: 20px;
+}
+dl.star-rating a.star2 {
+  left: 20px;
+}
+dl.star-rating a.star2:hover {
+  width: 40px;
+}dl.star-rating a.star3 {
+  left: 40px;
+}
+  dl.star-rating a.star3:hover {
+  width: 60px;
+}
+dl.star-rating a.star4 {
+  left: 60px;
+}
+dl.star-rating a.star4:hover {
+  width: 80px;
+}
+dl.star-rating a.star5 {
+  left: 80px;
+}
+dl.star-rating a.star5:hover {
+  width: 100px;
+}
+dl.star-rating li.current {
+  background: url(../images/stars.png) left bottom;
+  height: 20px;
+  z-index: 1;
 }

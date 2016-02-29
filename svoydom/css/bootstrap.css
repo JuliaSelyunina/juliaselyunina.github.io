@@ -299,14 +299,14 @@ hr {
 [role="button"] {
   cursor: pointer;
 }
-.container, .conteiner-footer {
+.container, .container-footer {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 480px) {
-  .container, .conteiner-footer {
+  .container, .container-footer {
     width: 480px;
   }
   .img-container img {
@@ -314,7 +314,7 @@ hr {
   }
 }
 @media (min-width: 768px) {
-  .container, .conteiner-footer {
+  .container, .container-footer {
     width: 750px;
   }
   .img-container img {
@@ -322,7 +322,7 @@ hr {
   }
 }
 @media (min-width: 992px) {
-  .container, .conteiner-footer {
+  .container, .container-footer {
     width: 970px;
   }
     .img-container img {
@@ -330,7 +330,7 @@ hr {
   }
 }
 @media (min-width: 1200px) {
-  .container, .conteiner-footer {
+  .container, .container-footer {
     width: 1170px;
   }
   .img-container img {
