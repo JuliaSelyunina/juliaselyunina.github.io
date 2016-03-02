@@ -258,6 +258,7 @@ ul[class="kind-description"] {
 .shares button:hover{
 	background-color: black;
 	color: white;
+	border: 1px solid black;
 }
 footer {
 	background-color: black;
@@ -450,6 +451,15 @@ a.button:hover, label.button:hover, input.button:hover{
 	height: 70px;
     border-radius: 50%;
 }
+.review {
+	margin-top: 40px;
+}
+.review img {
+
+}
+.review img:hover {
+	background-color:rgba(0,0,0, 0.6);
+}
 .review-online {
 	text-align: left;
 }
@@ -531,3 +541,8 @@ dl.star-rating li.current {
   height: 20px;
   z-index: 1;
 }
+#content {width:100%; overflow:hidden;}
+#content a {position:relative;}
+#content a span { display:none; background-image:url(../images/zoom.png); background-repeat:no-repeat; width: 255px; height: 345px; position:absolute; background-position: center;}
+#content a:hover span { display:block; margin-left: auto;
+    margin-right: auto; float: none;background-color:rgba(0,0,0, 0.6);} 
